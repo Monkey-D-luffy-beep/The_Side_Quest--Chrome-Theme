@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Aesthetic New Tab</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="container">
+    <!-- image or video will be injected here -->
+    <div id="media-wrap">
+      <!-- <img id="bg-img"> or <video id="bg-video"> inserted by JS -->
+    </div>
+
+    <!-- Draggable control panel -->
+    <div id="controls" class="draggable">
+      <div class="drag-handle" title="Drag to move">⋮⋮</div>
+
+      <div class="controls-row">
+        <button id="nextBtn" title="Next image">Next</button>
+        <button id="favoriteBtn" title="Bookmark this image">★</button>
+        <label title="Toggle dark mode">
+          <input type="checkbox" id="darkToggle" /> Dark
+        </label>
+        <button id="keywordBtn" title="Add keywords">Keywords</button>
+        <button id="favoritesBtn" title="View favorites">Favorites</button>
+        <button id="settingsBtn" title="Settings">⚙</button>
+      </div>
+
+  <div style="font-size:12px;opacity:0.7;text-align:center;"> — The Side Quest —   </div>
+    </div>
+
+    <!-- Keyword input modal -->
+    <div id="keywordModal" class="modal">
+      <div class="modal-content">
+        <h2>Add Keywords</h2>
+        <p>Enter keywords to scrape new aesthetic wallpapers (landscape HD only)</p>
+        <textarea id="keywordInput" placeholder="e.g., dark aesthetic landscape, mountain wallpaper 4k, ocean sunset wallpaper" rows="4"></textarea>
+        <div class="modal-buttons">
+          <button id="scrapeBtn" class="primary">Scrape Images</button>
+          <button id="cancelBtn">Cancel</button>
+        </div>
+        <div id="scrapeStatus"></div>
+      </div>
+    </div>
+
+    <!-- Favorites modal -->
+    <div id="favoritesModal" class="modal">
+      <div class="modal-content favorites-content">
+        <h2>Favorite Images</h2>
+        <div id="favoritesGrid"></div>
+        <button id="closeFavoritesBtn">Close</button>
+      </div>
+    </div>
+
+    <!-- Settings modal -->
+    <div id="settingsModal" class="modal">
+      <div class="modal-content">
+        <h2>Settings</h2>
+
+        <div class="setting-group">
+          <label>Auto-change wallpaper every:</label>
+          <select id="rotationInterval">
+            <option value="5">5 minutes</option>
+            <option value="15">15 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="60" selected>1 hour</option>
+            <option value="240">4 hours</option>
+            <option value="720">12 hours</option>
+            <option value="1440">1 day</option>
+            <option value="10080">1 week</option>
+            <option value="0">Never (manual only)</option>
+          </select>
+        </div>
+
+        <div class="setting-group">
+          <label>
+            <input type="checkbox" id="autoChangeEnabled" checked />
+            Enable auto-change
+          </label>
+        </div>
+
+        <div class="modal-buttons">
+          <button id="saveSettingsBtn" class="primary">Save</button>
+          <button id="cancelSettingsBtn">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="newtab.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "pinterest-aesthetic-extension",
+  "version": "1.2.0",
+  "description": "Pinterest aesthetic wallpaper scraper API for Chrome extension",
+  "main": "scraper_api.js",
+  "scripts": {
+    "start": "node scraper_api.js",
+    "scrape": "python pinterest_scraper.py"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "keywords": ["pinterest", "scraper", "wallpaper", "aesthetic"],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Aesthetic Controls</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 12px; width: 250px; }
+    button { padding: 8px 12px; margin: 4px 0; width:100%; }
+    label { display:block; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <button id="next">Next Image</button>
+  <button id="refreshCache">Reload Local Cache</button>
+  <label><input type="checkbox" id="darkMode"/> Dark Mode</label>
+  <div style="margin-top:8px; font-size:12px; color:#666">Phase 1 — local cache only. To populate Pinterest images, run the scraper (provided later).</div>
+
+  <img id="themeImage" src="" alt="Aesthetic Background" style="width:100%;max-height:200px;border-radius:12px;object-fit:cover;margin-top:12px;" />
+  <script src="popup.js"></script>
+</body>
+</html>
