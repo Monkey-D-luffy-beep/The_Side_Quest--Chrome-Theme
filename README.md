@@ -1,5 +1,5 @@
 # Pinterest X Side Quest - Chrome Extension
-![Uploading thumb.png…]()
+
 
 A Chrome extension that automatically updates your browser's new tab with beautiful aesthetic images from Pinterest.
 
