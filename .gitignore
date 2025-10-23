@@ -8,7 +8,61 @@ __pycache__/
 env/
 build/
 develop-eggs/
+# Ignore Python virtual environments
+venv/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore node modules
+node_modules/
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore cache and log files
+*.log
+*.cache
+*.sqlite3
+
+# Ignore extension data cache
+extension/data/pinterest_cache.json
+
+# Ignore package lock files
+package-lock.json
+
+# Ignore test and temp files
+*.bak
+*.tmp
+
+# Ignore coverage reports
+coverage/
+*.coverage
+
+# Ignore build output
+build/
 dist/
+
+# Ignore other secrets
+secrets.json
+
+# Ignore miscellaneous
+*.swp
+*.swo
 downloads/
 eggs/
 .eggs/
